@@ -52,8 +52,8 @@ sudo modprobe br_netfilter
 sudo kubeadm init --pod-network-cidr=192.168.0.0/16
 
 # Install network plugin (Calico used as an example)
-kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.0/manifests/tigera-operator.yaml
-kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.0/manifests/custom-resources.yaml
+kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.25.1/manifests/tigera-operator.yaml
+kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.25.1/manifests/custom-resources.yaml
 
 # Add export KUBECONFIG to bashrc
 echo "export KUBECONFIG=/etc/kubernetes/admin.conf" >> $HOME/.bashrc
